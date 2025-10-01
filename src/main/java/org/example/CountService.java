@@ -90,7 +90,7 @@ class CountService {
      *
      * @param counterName name of counter
      */
-    private void incrementCounter(String counterName) {
+    void incrementCounter(String counterName) {
         sharedData.<String, Long>getAsyncMap(MAP_COUNTS_NAME)
                 .onSuccess(map -> map.putIfAbsent(counterName, 1L).onSuccess(existingCounter -> {
                     // Key doesn't exist, so it has been initialized, no other action.

@@ -29,7 +29,9 @@ TATUMNODE_HOST: Target Ethereum node host name
 TATUMNODE_PORT: Target Ethereum node port  
 PROXY_PORT: Listening port  
 PROXY_CERT_PATH: Path to TLS certificate file  
-PROXY_KEY_PATH: Path to TLS private key file
+PROXY_KEY_PATH: Path to TLS private key file  
+PROXY_METRICS_PATH: metrics endpoint  
+PROXY_PATH_PREFIX: path prefix for ethereum proxy calls
 
 ## Building the Docker Image
 Building process is multistage.

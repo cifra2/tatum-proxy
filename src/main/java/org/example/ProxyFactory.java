@@ -19,7 +19,6 @@ class ProxyFactory {
                                           .setMaxLifetimeUnit(TimeUnit.SECONDS)
                                           .setMaxWaitQueueSize(20);
         HttpClientOptions clientOptions = new HttpClientOptions().setSsl(true)
-                                                  .setTrustAll(true)
                                                   .setKeepAlive(true)
                                                   .setIdleTimeout(30);
 
