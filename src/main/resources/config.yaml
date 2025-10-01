@@ -1,0 +1,11 @@
+tatumNode:
+  host: "ethereum-mainnet.gateway.tatum.io"
+  port: 443
+proxy:
+  port: 8443
+  pathPrefix: "/eth"
+  metricsPath: "/stats"
+  healthPath: "/health"
+  certPath: "tls/server-cert.pem"
+  keyPath: "tls/server-key.pem"
+  apiKey: "t-68da8d1b5f3c187b7b469acc-2d060a04766d440d82eef209"
